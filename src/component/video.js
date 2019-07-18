@@ -21,7 +21,7 @@ class Abc extends Component {
 
  
 
-<video src={require(`../image/web.mp4`)}Loop autoPlay  width="1920" height="1080"></video>
+<video src={require(`../images/web.mp4`)}Loop autoPlay  width="1920" height="1080"></video>
 
 
 </div>
