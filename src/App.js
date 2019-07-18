@@ -9,7 +9,9 @@ import Slideshow from './component/img';
 function App() {
   return (
     <div>
+    <Abc/>
       <Slideshow/>
+    
     </div>
   );
 }
