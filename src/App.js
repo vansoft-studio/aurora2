@@ -11,7 +11,9 @@ function App() {
     <div>
     <Abc/>
       <Slideshow/>
-    
+    <div className="img-background">
+     <Contact/>
+    </div>
     </div>
   );
 }
