@@ -15,6 +15,14 @@ function App() {
      <Contact/>
     </div>
     </div>
+    <div className="bg_img">
+    <div className="text">
+      
+      <Login/>
+     
+      
+     </div>
+     </div>
   );
 }
 
