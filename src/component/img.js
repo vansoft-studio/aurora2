@@ -1,12 +1,14 @@
-import React,{ Component } from 'react';
-
+import React from 'react';
 import { Slide } from 'react-slideshow-image';
  
-
-
+const slideImages = [
+    require(`../images/f.jpg`),
+    require(`../images/se.jpg`),
+    require(`../images/ter.jpg`)
+];
  
 const properties = {
-  duration: 3000,
+  duration: 5000,
   transitionDuration: 500,
   infinite: true,
   indicators: true,
@@ -20,20 +22,20 @@ const Slideshow = () => {
     return (
       <Slide {...properties}>
         <div className="each-slide">
-         
-            <span><img src={require(`../images/f.jpg`)} /></span>
+          <div style={{'backgroundImage': `url(${slideImages[0]})`}}>
+           
           </div>
-        
+        </div>
         <div className="each-slide">
-          
-            <span><img src={require(`../images/se.jpg`)} /></span>
+          <div style={{'backgroundImage': `url(${slideImages[1]})`}}>
+            
           </div>
-       
+        </div>
         <div className="each-slide">
+          <div style={{'backgroundImage': `url(${slideImages[2]})`}}>
           
-            <span><img src={require(`../images/ter.jpg`)} /></span>
           </div>
-      
+        </div>
       </Slide>
     )
 }
